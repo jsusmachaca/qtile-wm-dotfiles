@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+from os import path
+import subprocess
+import json
+
+
+user_path = path.expanduser('~')
+full_path = path.join(user_path, '.config', 'qtile', 'themes', 'index.json')
+
+def set_new_theme() -> bool:
+    try:
+        theme = input('\033[95m[+] Theme: \033[00m').strip()
+        if path.exists(path.join(user_path, '.config', 'qtile', 'themes', theme + '.json')):
+            with open(full_path, 'r+') as file:
+                data = json.load(file)
+                data['theme'] = theme
+                file.seek(0)
+                json.dump(data, file, indent=2, sort_keys=True)
+                file.truncate()
+        
+            subprocess.run(['qtile', 'cmd-obj', '-o', 'cmd', '-f', 'reload_config'])
+
+            return True
+        else:
+            print(f'\n\033[91mThe file "{theme}.json" does not exist\033[0m')
+            return False
+
+    except KeyboardInterrupt:
+        print('\n\033[91mAborted\033[0m')
+
+
+if __name__ == '__main__':
+    set_new_theme()

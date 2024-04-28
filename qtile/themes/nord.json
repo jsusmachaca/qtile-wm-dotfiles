@@ -1,0 +1,91 @@
+{
+    "bar": "#0f101a",
+
+    "arch_logo": {
+        "foreground": "#d8dee9"
+    },
+
+    "current_window": {
+        "this_current_screen_border": "#2c2c36"
+    },
+
+    "window_name": {
+            "foreground": "#4c566a"
+    },
+
+    "widget_update": {
+        "arrow": {
+            "background": "#1f223b"
+        },
+        "icon": {
+            "foreground": "#d8dee9",
+            "background": "#1f223b"
+        },
+        "checkupdates": {
+            "foreground": "#d8dee9",
+            "background": "#1f223b"
+        }
+    },
+
+    "widget_memory": {
+        "arrow": {
+            "foreground": "#1f223b",
+            "background": "#1b1b25"
+        },
+        "icon": {
+            "foreground": "#d8dee9",
+            "background": "#1b1b25"
+        },
+        "memory": {
+            "foreground": "#d8dee9",
+            "background": "#1b1b25"
+        },
+        "sep": {
+            "foreground": "#1b1b25",
+            "background": "#1b1b25"  
+        }
+    },
+
+    "widget_layout": {
+        "arrow": {
+            "foreground": "#1b1b25",
+            "background": "#283144"
+        },
+        "layout_icon": {
+            "background": "#283144"
+        },
+        "layout": {
+            "foreground": "#d8dee9",
+            "background": "#283144"
+        }
+    },
+
+    "widget_clock": {
+        "arrow": {
+            "foreground": "#283144",
+            "background": "#1c2332"
+        },
+        "icon": {
+            "foreground": "#d8dee9",
+            "background": "#1c2332"
+        },
+        "clock": {
+            "foreground": "#d8dee9",
+            "background": "#1c2332"
+        },
+        "sep": {
+            "foreground": "#d8dee9",
+            "background": "#1c2332"    
+        },
+        "sep_f": {
+            "color": "#1c2332"
+        }
+    },
+
+    "systray": {
+        "arrow": {
+            "foreground": "#1c2332"
+        }
+    },
+    "orientation": "top"
+}
