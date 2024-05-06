@@ -65,3 +65,5 @@ mv .xprofile .xsession
 | CaskaydiaCove Nerd Font |            *           |          *          |
 | noto-fonts              |            *           |          *          |
 | noto-fonts-emoji        |            *           |          *          |
+
+- Install fonts in ``/usr/share/fonts``
