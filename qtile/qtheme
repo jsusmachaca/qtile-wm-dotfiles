@@ -6,7 +6,7 @@ import json
 
 
 user_path = path.expanduser('~')
-full_path = path.join(user_path, '.config', 'qtile', 'themes', 'index.json')
+full_path = path.join(user_path, '.config', 'qtile', 'themes', 'theme_selector.json')
 
 def set_new_theme() -> bool:
     try:

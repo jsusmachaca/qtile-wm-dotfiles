@@ -1,6 +1,6 @@
 from libqtile.config import Key
 from libqtile.lazy import lazy
-
+import os
 
 mod = 'mod4'
 terminal = 'alacritty'
@@ -50,12 +50,9 @@ keys = [
     Key([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Audio Control
-    Key([], "XF86AudioLowerVolume", lazy.spawn(
-            "pactl set-sink-volume @DEFAULT_SINK@ -5%")),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn(
-            "pactl set-sink-volume @DEFAULT_SINK@ +5%")),
-    Key([], "XF86AudioMute", lazy.spawn(
-            "pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
 
     # Brightness Control
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),

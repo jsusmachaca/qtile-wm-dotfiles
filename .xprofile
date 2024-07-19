@@ -1,29 +1,11 @@
 #!/bin/sh
 
-# Set Touchpad
+#[Set Touchpad]
 xinput set-prop "ELAN0504:00 04F3:3091 Touchpad" "libinput Tapping Enabled" 1
 
-# Language
+#[Language]
 setxkbmap latam
 
-# Networking Applet
-nm-applet &
-
-# Battery Icon
-cbatticon &
-
-# Volume Icon
-volumeicon &
-
-# Mounted Disks
-udiskie -t &
-
-# Bluetooth Applet
-blueman-applet &
-
-# Wallpaper
-# nitrogen --restore &
+#[Wallpaper]
+#nitrogen --restore &
 feh --bg-scale $HOME/.wallpapers/17010.webp &
-
-# Transparency
-picom -b &
