@@ -7,6 +7,7 @@ from settings.layouts import layouts, floating_layout
 from settings.widgets import screens, widget_defaults, extension_defaults
 from settings.mouse import mouse
 
+
 @hook.subscribe.startup_once
 def start_once():
     home = path.expanduser('~')

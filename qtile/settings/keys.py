@@ -1,6 +1,6 @@
 from libqtile.config import Key
 from libqtile.lazy import lazy
-import os
+
 
 mod = 'mod4'
 terminal = 'alacritty'
