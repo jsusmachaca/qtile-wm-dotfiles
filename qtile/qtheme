@@ -11,7 +11,7 @@ full_path = path.join(user_path, '.config', 'qtile', 'themes', 'theme_selector.j
 def set_new_theme() -> bool:
     try:
         theme = input('\033[95m[+] Theme: \033[00m').strip()
-        position = input('\033[95m[+] Position [t/b]: \033[00m').strip()
+        position = input('\033[33m[+] Position [t/b]: \033[00m').strip()
         if path.exists(path.join(user_path, '.config', 'qtile', 'themes', theme + '.json')):
             with open(full_path, 'r+') as file:
                 data = json.load(file)
