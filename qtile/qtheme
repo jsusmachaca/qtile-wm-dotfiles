@@ -16,7 +16,7 @@ def set_new_theme() -> bool:
             with open(full_path, 'r+') as file:
                 data = json.load(file)
                 data['theme'] = theme
-                data['position'] = 'top' if position == 't' else 'bottom'
+                data['position'] = 'bottom' if position == 'b' else 'top'
                 file.seek(0)
                 json.dump(data, file, indent=2, sort_keys=True)
                 file.truncate()
