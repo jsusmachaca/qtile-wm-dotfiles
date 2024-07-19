@@ -5,6 +5,7 @@ import os
 
 
 def set_theme():
+    global json_theme
     user_path = os.path.expanduser('~')
     full_path = os.path.join(user_path, '.config', 'qtile', 'themes', 'theme_selector.json')
     with open(full_path, 'r') as file:
@@ -24,9 +25,11 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+bar_placement = json_theme['position']
+
 screens = [
     Screen(
-        top=bar.Bar(
+        **{bar_placement: bar.Bar(
             [
 #       WIDGETS ARCH LOGO    .
                 widget.TextBox(
@@ -203,6 +206,6 @@ screens = [
             ],
             21,
             opacity=0.99,
-        ),
+        )},
     ),
 ]
