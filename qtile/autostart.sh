@@ -3,11 +3,11 @@
 #[Battery Icon]
 cbatticon &
 
-#[Networking Applet]
-nm-applet &
-
 #[Volume Icon]
 volumeicon &
+
+#[Networking Applet]
+nm-applet &
 
 #[Mounted Disks]
 # udiskie -t &
