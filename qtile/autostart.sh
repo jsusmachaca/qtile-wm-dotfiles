@@ -10,10 +10,7 @@ nm-applet &
 volumeicon &
 
 #[Mounted Disks]
-#udiskie -t &
+# udiskie -t &
 
 #[Bluetooth Applet]
 blueman-applet &
-
-#[Transparency]
-picom -b &

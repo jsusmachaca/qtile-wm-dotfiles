@@ -6,6 +6,9 @@ xinput set-prop "ELAN0504:00 04F3:3091 Touchpad" "libinput Tapping Enabled" 1
 #[Language]
 setxkbmap latam
 
+#[Transparency]
+picom -b &
+
 #[Wallpaper]
-#nitrogen --restore &
+# nitrogen --restore &
 feh --bg-scale $HOME/.wallpapers/17010.webp &
