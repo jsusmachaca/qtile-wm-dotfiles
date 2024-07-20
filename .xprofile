@@ -2,6 +2,9 @@
 
 export PATH=$HOME/.config/qtile/bin:$PATH
 
+#[Sound effect]
+mpv --no-video $HOME/Música/game-start-6104.mp3 &
+
 #[Set Touchpad]
 xinput set-prop "ELAN0504:00 04F3:3091 Touchpad" "libinput Tapping Enabled" 1
 
@@ -12,5 +15,5 @@ setxkbmap latam
 picom -b &
 
 #[Wallpaper]
-# nitrogen --restore &
 feh --bg-scale $HOME/.wallpapers/17010.webp &
+# nitrogen --restore &
