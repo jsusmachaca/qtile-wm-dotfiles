@@ -95,12 +95,12 @@ screens = [
                 widget.TextBox(
                     text=" ",
                     foreground=data['widget_update']['icon']['foreground'],
-                    background=data['widget_update']['icon']['background'],
+                    background=data['widget_update']['arrow']['background'],
                 ),
 
                 widget.CheckUpdates(
                     foreground=data['widget_update']['checkupdates']['foreground'],
-                    background=data['widget_update']['checkupdates']['background'],
+                    background=data['widget_update']['arrow']['background'],
 
                     display_format='{updates}',
                     colour_have_updates=data['widget_update']['checkupdates']['foreground'],
@@ -114,25 +114,25 @@ screens = [
                     text="󱈙 ",
                     padding=-12,
                     fontsize=37,
-                    foreground=data['widget_memory']['arrow']['foreground'],
+                    foreground=data['widget_update']['arrow']['background'],
                     background=data['widget_memory']['arrow']['background'],
                 ),
 
                 widget.TextBox(
                     text='󰍛 ',
                     foreground=data['widget_memory']['icon']['foreground'],
-                    background=data['widget_memory']['icon']['background'],
+                    background=data['widget_memory']['arrow']['background'],
                 ),
 
                 widget.Memory(
                     format="{MemUsed:.0f}{mm} / {MemTotal:.0f}{mm}",
                     foreground=data['widget_memory']['memory']['foreground'],
-                    background=data['widget_memory']['memory']['background'],
+                    background=data['widget_memory']['arrow']['background'],
                 ),
 
                 widget.Sep(
-                    foreground=data['widget_memory']['sep']['foreground'],
-                    background=data['widget_memory']['sep']['background'],
+                    foreground=data['widget_memory']['arrow']['background'],
+                    background=data['widget_memory']['arrow']['background'],
                 ),
 
 #       WIDGETS LAYOUT    .
@@ -140,18 +140,18 @@ screens = [
                     text="󱈙 ",
                     padding=-12,
                     fontsize=37,
-                    foreground=data['widget_layout']['arrow']['foreground'],
+                    foreground=data['widget_memory']['arrow']['background'],
                     background=data['widget_layout']['arrow']['background'],
                 ),
 
                 widget.CurrentLayoutIcon(
                     scale = 0.6,
-                    background=data['widget_layout']['layout_icon']['background'],
+                    background=data['widget_layout']['arrow']['background'],
                 ),
 
                 widget.CurrentLayout(
                     foreground=data['widget_layout']['layout']['foreground'],
-                    background=data['widget_layout']['layout']['background'],
+                    background=data['widget_layout']['arrow']['background'],
                 ),
 
 #       WIDGETS CLOCK   . 
@@ -159,36 +159,36 @@ screens = [
                     text="󱈙 ",
                     padding=-12,
                     fontsize=37,
-                    foreground=data['widget_clock']['arrow']['foreground'],
+                    foreground=data['widget_layout']['arrow']['background'],
                     background=data['widget_clock']['arrow']['background'],
                 ),
 
                 widget.TextBox(
                     text='󰃰 ',
                     foreground=data['widget_clock']['icon']['foreground'],
-                    background=data['widget_clock']['icon']['background'],
+                    background=data['widget_clock']['arrow']['background'],
                 ),
 
                 widget.Clock(
                     format="%d/%m/%Y ",
                     foreground=data['widget_clock']['clock']['foreground'],
-                    background=data['widget_clock']['clock']['background'],
+                    background=data['widget_clock']['arrow']['background'],
                 ),
 
                 widget.Sep(
                     foreground=data['widget_clock']['sep']['foreground'],
-                    background=data['widget_clock']['sep']['background'],
+                    background=data['widget_clock']['arrow']['background'],
                 ),
 
                 widget.Clock(
                     format=" %I:%M %p",
                     foreground=data['widget_clock']['clock']['foreground'],
-                    background=data['widget_clock']['clock']['background'],
+                    background=data['widget_clock']['arrow']['background'],
                 ),
 
                 widget.Sep(
-                    foreground=data['widget_clock']['sep_f']['color'],
-                    background=data['widget_clock']['sep_f']['color'],
+                    foreground=data['widget_clock']['arrow']['background'],
+                    background=data['widget_clock']['arrow']['background'],
                 ),
 
 #       WIDGETS SYSTRAY   
@@ -196,7 +196,7 @@ screens = [
                     text="󱈙 ",
                     padding=-11,
                     fontsize=37,
-                    foreground=data['systray']['arrow']['foreground'],
+                    foreground=data['widget_clock']['arrow']['background'],
                     background=data['bar'],
                 ),
                 
