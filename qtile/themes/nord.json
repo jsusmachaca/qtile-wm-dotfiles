@@ -18,74 +18,46 @@
             "background": "#1f223b"
         },
         "icon": {
-            "foreground": "#d8dee9",
-            "background": "#1f223b"
+            "foreground": "#d8dee9"
         },
         "checkupdates": {
-            "foreground": "#d8dee9",
-            "background": "#1f223b"
+            "foreground": "#d8dee9"
         }
     },
 
     "widget_memory": {
         "arrow": {
-            "foreground": "#1f223b",
             "background": "#1b1b25"
         },
         "icon": {
-            "foreground": "#d8dee9",
-            "background": "#1b1b25"
+            "foreground": "#d8dee9"
         },
         "memory": {
-            "foreground": "#d8dee9",
-            "background": "#1b1b25"
-        },
-        "sep": {
-            "foreground": "#1b1b25",
-            "background": "#1b1b25"  
+            "foreground": "#d8dee9"
         }
     },
 
     "widget_layout": {
         "arrow": {
-            "foreground": "#1b1b25",
-            "background": "#283144"
-        },
-        "layout_icon": {
             "background": "#283144"
         },
         "layout": {
-            "foreground": "#d8dee9",
-            "background": "#283144"
+            "foreground": "#d8dee9"
         }
     },
 
     "widget_clock": {
         "arrow": {
-            "foreground": "#283144",
             "background": "#1c2332"
         },
         "icon": {
-            "foreground": "#d8dee9",
-            "background": "#1c2332"
+            "foreground": "#d8dee9"
         },
         "clock": {
-            "foreground": "#d8dee9",
-            "background": "#1c2332"
+            "foreground": "#d8dee9"
         },
         "sep": {
-            "foreground": "#d8dee9",
-            "background": "#1c2332"    
-        },
-        "sep_f": {
-            "color": "#1c2332"
+            "foreground": "#d8dee9" 
         }
-    },
-
-    "systray": {
-        "arrow": {
-            "foreground": "#1c2332"
-        }
-    },
-    "orientation": "top"
+    }
 }

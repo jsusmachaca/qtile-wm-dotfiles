@@ -10,7 +10,7 @@
     },
 
     "window_name": {
-            "foreground": "#189bad"
+        "foreground": "#189bad"
     },
 
     "widget_update": {
@@ -18,74 +18,46 @@
             "background": "#0c0c0c"
         },
         "icon": {
-            "foreground": "#00e87b",
-            "background": "#0c0c0c"
+            "foreground": "#00e87b"
         },
         "checkupdates": {
-            "foreground": "#00e87b",
-            "background": "#0c0c0c"
+            "foreground": "#00e87b"
         }
     },
 
     "widget_memory": {
         "arrow": {
-            "foreground": "#0c0c0c",
             "background": "#17171c"
         },
         "icon": {
-            "foreground": "#00dde8",
-            "background": "#17171c"
+            "foreground": "#00dde8"
         },
         "memory": {
-            "foreground": "#00dde8",
-            "background": "#17171c"
-        },
-        "sep": {
-            "foreground": "#17171c",
-            "background": "#17171c"  
+            "foreground": "#00dde8"
         }
     },
 
     "widget_layout": {
         "arrow": {
-            "foreground": "#17171c",
-            "background": "#151313"
-        },
-        "layout_icon": {
             "background": "#151313"
         },
         "layout": {
-            "foreground": "#f02572",
-            "background": "#151313"
+            "foreground": "#f02572"
         }
     },
 
     "widget_clock": {
         "arrow": {
-            "foreground": "#151313",
             "background": "#242424"
         },
         "icon": {
-            "foreground": "#ecb003",
-            "background": "#242424"
+            "foreground": "#ecb003"
         },
         "clock": {
-            "foreground": "#ecb003",
-            "background": "#242424"
+            "foreground": "#ecb003"
         },
         "sep": {
-            "foreground": "#ecb003",
-            "background": "#242424"    
-        },
-        "sep_f": {
-            "color": "#242424"
+            "foreground": "#ecb003"
         }
-    },
-
-    "systray": {
-        "arrow": {
-            "foreground": "#242424"
-        }
-    },
-    "orientation": "buttom"
+    }
 }
