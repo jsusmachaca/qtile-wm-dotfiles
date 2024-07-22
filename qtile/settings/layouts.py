@@ -2,7 +2,6 @@ from libqtile.layout import MonadTall, MonadWide, Max
 from libqtile.config import Match
 from libqtile import layout
 
-
 layouts = [
     MonadTall(border_focus_stack=["#0f101a", "#0f101a"], border_focus=["#5d5d5d", "#5d5d5d"], border_width=1, margin=6),
     MonadWide(border_focus_stack=["#0f101a", "#0f101a"], border_focus=["#5d5d5d", "#5d5d5d"], border_width=1, margin=6),

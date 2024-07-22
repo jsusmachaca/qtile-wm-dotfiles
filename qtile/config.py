@@ -4,8 +4,9 @@ from libqtile import hook
 from settings.keys import keys, mod
 from settings.groups import groups
 from settings.layouts import layouts, floating_layout
-from settings.widgets import screens, widget_defaults, extension_defaults
+from settings.screens import screens
 from settings.mouse import mouse
+from settings.widgets import widget_defaults, extension_defaults
 
 
 @hook.subscribe.startup_once

@@ -44,7 +44,7 @@ keys = [
     Key([mod], "e", lazy.spawn("rofi -show emoji")),
     
     # Screen Capture
-    Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
+    Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
 
     Key([mod], "r", lazy.spawn("redshift -O 4000")),
     Key([mod, "shift"], "r", lazy.spawn("redshift -x")),
