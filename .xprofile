@@ -15,5 +15,5 @@ setxkbmap latam
 picom -b &
 
 #[Wallpaper]
-feh --bg-scale $HOME/.wallpapers/17010.webp &
-# nitrogen --restore &
+# feh --bg-scale $HOME/.wallpapers/71.png &
+nitrogen --restore &
