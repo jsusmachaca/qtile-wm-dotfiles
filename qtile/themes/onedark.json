@@ -1,0 +1,63 @@
+{
+    "bar": "#282c34",
+
+    "arch_logo": {
+        "foreground": "#e06c75"
+    },
+
+    "current_window": {
+        "this_current_screen_border": "#c678dd"
+    },
+
+    "window_name": {
+        "foreground": "#8ac3e1"
+    },
+
+    "widget_update": {
+        "arrow": {
+            "background": "#ffd47e"
+        },
+        "icon": {
+            "foreground": "#000000"
+        },
+        "checkupdates": {
+            "foreground": "#000000"
+        }
+    },
+
+    "widget_memory": {
+        "arrow": {
+            "background": "#c678dd"
+        },
+        "icon": {
+            "foreground": "#000000"
+        },
+        "memory": {
+            "foreground": "#000000"
+        }
+    },
+
+    "widget_layout": {
+        "arrow": {
+            "background": "#e06c75"
+        },
+        "layout": {
+            "foreground": "#000000"
+        }
+    },
+
+    "widget_clock": {
+        "arrow": {
+            "background": "#61afef"
+        },
+        "icon": {
+            "foreground": "#000000"
+        },
+        "clock": {
+            "foreground": "#000000"
+        },
+        "sep": {
+            "foreground": "#000000"
+        }
+    }
+}
