@@ -6,10 +6,10 @@ export PATH=$HOME/.config/qtile/bin:$PATH
 mpv --no-video $HOME/Música/game-start-6104.mp3 &
 
 #[Set Touchpad]
-xinput set-prop "ELAN0504:00 04F3:3091 Touchpad" "libinput Tapping Enabled" 1
+xinput set-prop "ELAN0504:00 04F3:3091 Touchpad" "libinput Tapping Enabled" 1 &
 
 #[Language]
-setxkbmap latam
+setxkbmap latam &
 
 #[Transparency]
 picom -b &
