@@ -1,11 +1,18 @@
-from libqtile.layout import MonadTall, MonadWide, Max
+from libqtile.layout import MonadTall, MonadWide, Max, Bsp
 from libqtile.config import Match
 from libqtile import layout
 
+configs = {
+    "border_focus": "#5d5d5d",
+    "border_width": 1,
+    "margin": 7
+}
+
 layouts = [
-    MonadTall(border_focus_stack=["#0f101a", "#0f101a"], border_focus=["#5d5d5d", "#5d5d5d"], border_width=1, margin=6),
-    MonadWide(border_focus_stack=["#0f101a", "#0f101a"], border_focus=["#5d5d5d", "#5d5d5d"], border_width=1, margin=6),
-    Max(border_focus_stack=["#0f101a", "#0f101a"], border_focus=["#5d5d5d", "#5d5d5d"], border_width=0),
+    MonadTall(**configs),
+    MonadWide(**configs),
+    Bsp(**configs),
+    Max()
 ]
 
 floating_layout = layout.Floating(
