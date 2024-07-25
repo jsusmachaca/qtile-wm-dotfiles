@@ -3,7 +3,7 @@ from libqtile.lazy import lazy
 
 
 mod = 'mod4'
-terminal = 'alacritty'
+terminal = 'kitty'
 
 keys = [
     # Focus apps.
