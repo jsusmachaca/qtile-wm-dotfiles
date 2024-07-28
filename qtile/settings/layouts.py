@@ -5,7 +5,7 @@ from libqtile import layout
 configs = {
     "border_focus": "#707070",
     "border_width": 1,
-    "margin": 7
+    "margin": 8
 }
 
 layouts = [
