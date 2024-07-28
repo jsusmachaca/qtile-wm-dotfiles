@@ -120,6 +120,36 @@ class cli:
         except Exception as e:
             red(f'Unexpected error: {e}')
 
+    def set_terminal_font (self, font_family: str = None):
+        try:
+            kitty_conf_path = path.join(self.user_path, '.config', 'kitty', 'kitty.conf')
+            
+            if font_family is None:
+                return
+            
+            if not path.exists(kitty_conf_path):
+                raise FileNotFoundError('The conf file kitty does not exist.')
+
+            with open(kitty_conf_path, 'r+') as file:
+                lines = file.readlines()
+                for index, line in enumerate(lines):
+                    if line.startswith('font_family'):
+                        lines[index] = f'font_family {font_family}\n'
+                        break
+                else:
+                    raise ValueError('Theme section not found in Kitty configuration file.')
+
+                file.seek(0)
+                file.writelines(lines)
+                file.truncate()
+
+            green(f'Kitty terminal font set to "{font_family}".')
+
+        except (FileNotFoundError, ValueError) as e:
+            red(f'Error: {e}')
+        except Exception as e:
+            red(f'Unexpected error: {e}')
+
     def set_terminal_opacity (self, opacity: str = None):
         try:
             kitty_conf_path = path.join(self.user_path, '.config', 'kitty', 'kitty.conf')
