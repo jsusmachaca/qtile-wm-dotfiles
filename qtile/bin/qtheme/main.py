@@ -1,5 +1,5 @@
-from os import path, listdir
-from colors import red, yelow, green, imagenta
+from os import path
+from colors import red
 from cli import cli
 from argparse import ArgumentParser
 
@@ -34,3 +34,6 @@ def main ():
 
     except Exception as e:
         red(f'Unexpected error: {e}')
+
+if __name__ == '__main__':
+    main()

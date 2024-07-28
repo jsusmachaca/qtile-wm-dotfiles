@@ -1,5 +1,5 @@
 from os import path, listdir
-from colors import green, red, yelow, blue, magenta
+from colors import green, red, blue, magenta
 import subprocess
 import json
 
