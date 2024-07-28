@@ -19,6 +19,7 @@ def main ():
         group = parser.add_argument_group('Terminal options')
         group.add_argument('-T', dest='terminal', help='Theme to set for Kitty terminal', metavar='terminal-theme')
         group.add_argument('-Tf', dest='terminal-font', help='Font to set fot Kitty Terminal', metavar='terminal-font')
+        group.add_argument('-To', dest='terminal_opacity', help='Font to set fot Kitty Terminal', metavar='terminal-font')
         args = parser.parse_args()
 
         if args.list:
@@ -30,6 +31,7 @@ def main ():
         kt.set_qtile_theme(args.theme)
         kt.set_bar_position(args.position)
         kt.set_terminal_theme(args.terminal)
+        kt.set_terminal_opacity(args.terminal_opacity)
 
     except Exception as e:
         red(f'Unexpected error: {e}')
