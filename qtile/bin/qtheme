@@ -1,49 +1,39 @@
 #!/usr/bin/env python3
 
 from os import path, listdir
-import subprocess
+from colors import red, yelow, green, imagenta
+from cli import cli
+import readline
 import json
 import sys
+from argparse import ArgumentParser
 
 
 user_path = path.expanduser('~')
-full_path = path.join(user_path, '.config', 'qtile', 'themes', 'theme_selector.json')
 
-def manu_themes():
-    sys.stdout.write("\033[2J\033[H")
-    sys.stdout.flush()
-    print('\033[31mAvailable themes:\033[00m')
-    for index, theme in enumerate(listdir(path.join(user_path, '.config', 'qtile', 'themes'))):
-        if theme != 'theme_selector.json':
-            print(f' \033[33m[{index + 1}]\033[00m -> \033[33m{theme.split('.')[0]}\033[00m')
-    print('')
-
-def set_new_theme() -> bool:
+def main ():
     try:
-        theme = input('\033[35m[+] Type theme: \033[00m').strip()
-        position = input('\033[35m[+] Type position [t/b]: \033[00m').strip()
-        if path.exists(path.join(user_path, '.config', 'qtile', 'themes', theme + '.json')):
-            with open(full_path, 'r+') as file:
-                data = json.load(file)
-                data['theme'] = theme
-                data['position'] = 'bottom' if position == 'b' else 'top'
-                file.seek(0)
-                json.dump(data, file, indent=2, sort_keys=True)
-                file.truncate()
-        
-            subprocess.run(['qtile', 'cmd-obj', '-o', 'cmd', '-f', 'reload_config'])
-            print('\n\033[32mTheme changed correctly  !\033[00m')
-            return True
-        else:
-            print(f'\n\033[91mThe file "{theme}.json" does not exist\033[0m')
-            return False
+        kt = cli(user_path)
+        parser = ArgumentParser()
+        parser.add_argument('-ls', '--list', action='store_true', help='List available themes')
+        parser.add_argument('-t', '--theme', help='Theme to set')
+        parser.add_argument('-p', '--position', help='Position of the qtile bar [top/bottom]')
+        parser.add_argument('-T', '--terminal', help='Position of the qtile bar [top/bottom]')
+        args = parser.parse_args()
+    
+        if args.list:
+            if args.theme or args.position:
+                parser.error('The command --list does not accept addicional arguments')
+            kt.menu_themes()
+            return
 
-    except KeyboardInterrupt:
-        print('\n\033[91mAborted\033[0m')
-    finally:
-        print('\n')
+        kt.set_qtile_theme(args.theme)
+        kt.set_terminal_theme(args.terminal)
+        kt.set_bar_position(args.position)
+
+    except Exception as e:
+        red(f'Unexpected error: {e}')
 
 
 if __name__ == '__main__':
-    manu_themes()
-    set_new_theme()
+    main()
