@@ -3,7 +3,7 @@
   "logo": {
     "type": "kitty-direct",
     "source": "~/.config/fastfetch/arch.png",
-    "width": 28,
+    "width": 27,
     "height": 12,
     "padding": {
         "top": 1
