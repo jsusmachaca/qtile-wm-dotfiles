@@ -16,8 +16,8 @@ def main ():
 
         group = parser.add_argument_group('Terminal options')
         group.add_argument('-T', dest='terminal', help='Theme to set for Kitty terminal', metavar='terminal-theme')
-        group.add_argument('-Tf', dest='terminal_font', help='Font to set fot Kitty Terminal', metavar='terminal-font')
-        group.add_argument('-To', dest='terminal_opacity', help='Font to set fot Kitty Terminal', metavar='terminal-font')
+        group.add_argument('-Tf', dest='terminal_font', help='Font to set for Kitty Terminal', metavar='terminal-font')
+        group.add_argument('-To', dest='terminal_opacity', help='Opacity to set for Kitty Terminal', metavar='terminal-font')
         args = parser.parse_args()
 
         if args.list:
