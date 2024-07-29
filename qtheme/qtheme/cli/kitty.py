@@ -1,5 +1,5 @@
 from os import path
-from utils.colors import green, red
+from qtheme.utils.colors import green, red
 
 
 class Kitty:

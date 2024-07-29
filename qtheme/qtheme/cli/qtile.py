@@ -1,5 +1,5 @@
 from os import path, listdir
-from utils.colors import green, red, blue, magenta
+from qtheme.utils.colors import green, red, blue, magenta
 import subprocess
 import json
 

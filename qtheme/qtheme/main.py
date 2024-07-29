@@ -1,6 +1,6 @@
 from os import path
-from utils.colors import red
-from cli import Qtile, Kitty
+from qtheme.utils.colors import red
+from qtheme.cli import Qtile, Kitty
 from argparse import ArgumentParser
 
 
