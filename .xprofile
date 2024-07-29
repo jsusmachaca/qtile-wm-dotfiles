@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PATH=$HOME/.config/qtile/bin:$PATH
+
 #[Sound effect]
 mpv --no-video $HOME/Música/game-start-6104.mp3 &
 
