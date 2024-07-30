@@ -3,8 +3,8 @@
 <!--![preview2](screenshots/2023-08-08_11-27.png)-->
 <!--![preview1](screenshots/2023-08-08_11-33.png)-->
 <div style="">
-<img src="screenshots/2023-08-08_11-27.png" alt="Preview" width="73%">
-<img src="screenshots/2023-08-08_11-26.png" alt="Preview" width="73%" style="margin-left: 200px;">
+  <img src="screenshots/qtile_1.png" alt="Preview" width="73%">
+  <img src="screenshots/qtile_2.png" alt="Preview" width="73%" style="margin-left: 200px;">
 </div>
 
 # Instalation 
