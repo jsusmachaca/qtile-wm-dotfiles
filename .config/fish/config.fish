@@ -4,13 +4,13 @@ end
 
 set fish_greeting ""
 
-
 alias cat='bat'
 alias ls='lsd'
 alias tree='lsd --tree'
 alias shutdown='shutdown now'
 alias pnpx='pnpm dlx'
 alias icat='kitten icat'
+alias kssh='kitten ssh'
 
 fastfetch
 
