@@ -11,7 +11,7 @@ keys = [
     Key([mod], "right", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "down", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "up", lazy.layout.up(), desc="Move focus up"),
-    
+
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"], "left", lazy.layout.shuffle_left(), desc="Move window to the left"),
     Key([mod, "shift"], "right", lazy.layout.shuffle_right(), desc="Move window to the right"),
@@ -22,7 +22,7 @@ keys = [
     Key([mod, "control"], "left", lazy.layout.grow()),
     Key([mod, "control"], "right", lazy.layout.shrink()),
     Key([mod], "s", lazy.window.toggle_floating()),
-    
+
     Key(
         [mod, "shift"],
         "Return",
@@ -42,9 +42,9 @@ keys = [
     Key([mod], "d", lazy.spawn("rofi -show drun")),
     Key([mod], "a", lazy.spawn("rofi -show window")),
     Key([mod], "e", lazy.spawn("rofi -show emoji")),
-    
+
     # Screen Capture
-    Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
+    Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
 
     Key([mod], "r", lazy.spawn("redshift -O 4000")),
     Key([mod, "shift"], "r", lazy.spawn("redshift -x")),
