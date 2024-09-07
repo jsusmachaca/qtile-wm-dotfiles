@@ -45,7 +45,7 @@ configuration {
 
 window {
   transparency: "real";
-  background-color: @bg;
+  background-color: #2a2a2add;
   border-radius: 10px;
   width: 900px;
   height: 500px;
@@ -61,12 +61,12 @@ inputbar {
 }
 
 entry {
-  background-color: inherit;
+  background-color: #1c1c1c;
   padding: 12px 3px;
 }
 
 prompt {
-  background-color: inherit;
+  background-color: #1c1c1c;
   padding: 12px;
 }
 
@@ -76,7 +76,7 @@ listview {
 
 element {
   children: [element-icon, element-text];
-  text-color: @blue;
+  text-color: #a1a1a1;
 }
 
 element-icon {
@@ -90,10 +90,10 @@ element-text {
 }
 
 element-text selected {
-  background-color: #50536b;
-  text-color: @purple;
+  background-color: #535353;
+  text-color: #f9f9f9;
 }
 
 element-icon selected {
-  background-color: #50536b;
+  background-color: #535353;
 }
