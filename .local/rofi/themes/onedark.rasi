@@ -8,6 +8,30 @@
  *
  */
 
+configuration {
+  font: "JetBrainsMono Nerd Font Bold 13";
+
+  drun {
+    display-name: " ";
+  }
+
+  run {
+    display-name: " ";
+  }
+
+  window {
+    display-name: " ";
+  }
+
+  emoji {
+    display-name: " ";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
 
 * {
   black:      #000000;
@@ -17,16 +41,15 @@
   blue:       #6eaafb;
   mangenta:   #d886f3;
   cyan:       #6cdcf7;
-  emphasis:   #50536b;
+  emphasis:   #545454;
   text:       #dfdfdf;
-  text-alt:   #b2b2b2;
+  text-alt:   #c2c2c2;
   fg:         #abb2bf;
   bg:         #282c34;
 
   spacing: 0;
   background-color: transparent;
 
-  font: "CaskaydiaCove Nerd Font 15";
   text-color: @text;
 }
 
@@ -51,7 +74,7 @@ prompt {
 
 textbox-prompt-colon {
   expand: false;
-  str: ":";
+  str: " : ";
   text-color: @text-alt;
 }
 
@@ -66,10 +89,15 @@ listview {
 }
 
 element {
-  padding: 5px;
+  padding: 10px;
+  children: [element-icon, element-text];
   text-color: @text-alt;
-  highlight: bold #95ee8f; /* green */
-  border-radius: 3px;
+  border-radius: 20px;
+}
+
+element-icon {
+  size: 50px;
+  padding: 0 20px;
 }
 
 element selected {
