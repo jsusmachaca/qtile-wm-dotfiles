@@ -33,19 +33,3 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     set_tabstop_based_on_extension()
   end,
 })
-
-vim.api.nvim_create_user_command("Format", function()
-  local goimports_result = vim.fn.system("goimports -w " .. vim.fn.expand("%"))
-
-  if vim.v.shell_error ~= 0 then
-    vim.notify("Error formatting with gofmt: " .. goimports_result, vim.log.levels.ERROR)
-  end
-
-  local gofmt_result = vim.fn.system("gofmt -s -w " .. vim.fn.expand("%"))
-
-  if vim.v.shell_error ~= 0 then
-    vim.notify("Error formatting with gofmt: " .. gofmt_result, vim.log.levels.ERROR)
-  end
-
-  vim.cmd("e!")
-end, {})
